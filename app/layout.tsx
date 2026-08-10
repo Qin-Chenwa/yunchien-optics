@@ -5,9 +5,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "云謙股份有限公司 | 光電・雷射・光學元件整合供應",
+  title: "云謙有限公司 YUN CHIAN LTD. | 光電・雷射・光學元件",
   description:
-    "云謙股份有限公司整合光電量測、雷射、光學元件、光譜量測與光纖通訊產品線,提供研究與產業客戶一站式解決方案。",
+    "云謙有限公司(YUN CHIAN LTD.)供應雷射光源、光學元件、光譜量測、光纖通訊與精密光機產品,提供選型建議、供貨與技術支援。TEL (02)-29667353。",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

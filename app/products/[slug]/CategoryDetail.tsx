@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Category, sourceLabels } from "@/data/catalog";
+import { Category } from "@/data/catalog";
 import { useLang } from "@/lib/i18n";
 
 export default function CategoryDetail({ category }: { category: Category }) {
@@ -12,7 +12,16 @@ export default function CategoryDetail({ category }: { category: Category }) {
         {t("back_products")}
       </Link>
 
-      <div className="mt-4 flex items-start gap-4">
+      <div className="mt-4 overflow-hidden rounded-2xl">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={category.image}
+          alt={lang === "zh" ? category.zh : category.en}
+          className="h-48 w-full object-cover md:h-64"
+        />
+      </div>
+
+      <div className="mt-6 flex items-start gap-4">
         <div className="text-4xl">{category.icon}</div>
         <div>
           <h1 className="text-2xl font-bold text-slate-900">
@@ -48,10 +57,6 @@ export default function CategoryDetail({ category }: { category: Category }) {
           >
             <div>
               <div className="font-medium text-slate-800">{lang === "zh" ? s.zh : s.en}</div>
-              <div className="mt-2 text-xs text-slate-400">
-                {t("from_sites")}:{" "}
-                {s.sources.map((src) => sourceLabels[src][lang]).join("、")}
-              </div>
             </div>
             <Link
               href={`/inquiry?category=${encodeURIComponent(

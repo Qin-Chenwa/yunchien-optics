@@ -15,12 +15,20 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-brand-light to-white">
-        <div className="mx-auto max-w-6xl px-4 py-20 text-center">
-          <h1 className="mx-auto max-w-3xl text-3xl font-bold leading-tight text-slate-900 md:text-5xl">
+      <section className="relative isolate overflow-hidden bg-slate-900">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/hero.svg"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 -z-10 bg-slate-950/45" />
+        <div className="mx-auto max-w-6xl px-4 py-24 text-center">
+          <h1 className="mx-auto max-w-3xl text-3xl font-bold leading-tight text-white md:text-5xl">
             {t("hero_title")}
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600 md:text-lg">
+          <p className="mx-auto mt-4 max-w-2xl text-base text-slate-200 md:text-lg">
             {t("hero_sub")}
           </p>
           <div className="mt-8 flex justify-center gap-3">
@@ -32,7 +40,7 @@ export default function Home() {
             </Link>
             <Link
               href="/inquiry"
-              className="rounded-lg border border-brand px-6 py-3 text-sm font-semibold text-brand hover:bg-brand-light"
+              className="rounded-lg border border-white/70 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
             >
               {t("hero_cta2")}
             </Link>

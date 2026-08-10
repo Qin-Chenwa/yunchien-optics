@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useLang } from "@/lib/i18n";
+import { company } from "@/data/company";
 
 export default function Footer() {
   const { t } = useLang();
@@ -9,14 +10,25 @@ export default function Footer() {
     <footer className="mt-16 border-t border-slate-200 bg-slate-50">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-3">
         <div>
-          <div className="mb-2 text-lg font-semibold text-slate-900">{t("company")}</div>
-          <p className="text-sm text-slate-500">{t("tagline")}</p>
+          <div className="text-lg font-semibold text-slate-900">{t("company")}</div>
+          <div className="text-sm font-medium tracking-wide text-slate-500">YUN CHIAN LTD.</div>
+          <p className="mt-2 text-sm text-slate-500">{t("tagline")}</p>
+          <p className="mt-2 text-xs text-slate-400">
+            {t("contact_tax_id")}:{company.taxId}
+          </p>
         </div>
         <div className="text-sm text-slate-600">
           <div className="mb-2 font-medium text-slate-800">{t("nav_contact")}</div>
-          <p>{t("contact_email")}: sales@yunqian.com.tw</p>
-          <p>{t("contact_tel")}: 03-000-0000</p>
-          <p>{t("contact_addr")}: 台灣 Taiwan</p>
+          <p>
+            TEL:
+            <a href={`tel:+886229667353`} className="hover:text-brand">
+              {company.tel}
+            </a>
+          </p>
+          <p>FAX:{company.fax}</p>
+          <p className="mt-1">
+            {t("contact_addr")}:{t("address_full")}
+          </p>
         </div>
         <div className="text-sm">
           <div className="mb-2 font-medium text-slate-800">{t("nav_products")}</div>

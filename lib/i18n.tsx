@@ -19,8 +19,8 @@ export const dict: Dict = {
   nav_inquiry: { zh: "線上詢價", en: "Inquiry" },
   nav_contact: { zh: "聯絡我們", en: "Contact" },
   hero_title: {
-    zh: "云謙光電 — 雷射、光學元件與量測儀器",
-    en: "Lasers, Optics & Measurement Instruments",
+    zh: "雷射、光學元件與光電量測儀器",
+    en: "Lasers, Optics & Photonic Instruments",
   },
   hero_sub: {
     zh: "從雷射光源、光學元件、光譜量測到光纖通訊,提供選型建議、供貨與後續技術支援。",

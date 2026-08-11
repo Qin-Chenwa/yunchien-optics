@@ -33,6 +33,7 @@ export const dict: Dict = {
   brands_title: { zh: "代理與供應品牌", en: "Represented Brands" },
   view_more: { zh: "查看更多", en: "View more" },
   subcats: { zh: "細項分類", en: "Subcategories" },
+  image_credit: { zh: "圖片", en: "Image" },
   inquiry_title: { zh: "線上詢價", en: "Product Inquiry" },
   inquiry_sub: {
     zh: "請填寫需求,我們的工程團隊將盡快與您聯繫報價。",

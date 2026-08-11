@@ -20,6 +20,18 @@ export default function CategoryDetail({ category }: { category: Category }) {
           className="h-48 w-full object-cover md:h-64"
         />
       </div>
+      {category.imageCredit && (
+        <div className="mt-1 text-right text-[11px] text-slate-400">
+          <a
+            href={category.imageCreditUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-slate-600"
+          >
+            {t("image_credit")}: {category.imageCredit}
+          </a>
+        </div>
+      )}
 
       <div className="mt-6">
         <h1 className="text-2xl font-bold text-slate-900">

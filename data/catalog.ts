@@ -16,6 +16,8 @@ export interface Category {
   descZh: string;
   descEn: string;
   image: string; // 分類主圖,換成自家照片時直接覆蓋 public 底下同名檔案
+  imageCredit?: string; // 圖片出處(CC 授權要求標示);換成自家照片時把這兩欄刪掉
+  imageCreditUrl?: string;
   brands: string[];
   subs: SubCategory[];
 }
@@ -27,7 +29,9 @@ export const categories: Category[] = [
     en: "Lasers & Light Sources",
     descZh: "各波段穩頻雷射、氣體/固態/半導體/光纖雷射,以及光譜量測用的寬頻、校正與可調波長光源。",
     descEn: "Stabilized lasers across all wavelengths, gas / solid-state / diode / fiber lasers, plus broadband, calibration and tunable sources for spectroscopy.",
-    image: "/products/lasers.svg",
+    image: "/products/lasers.jpg",
+    imageCredit: "Suyash Dwivedi / Wikimedia Commons, CC BY-SA 4.0",
+    imageCreditUrl: "https://commons.wikimedia.org/wiki/File:5mW_Mini_Laser_Diode_Module.jpg",
     brands: ["CNI", "CrystaLaser", "RGB Lase", "Solar", "寧波遠明", "Integrated Optics", "K2 Photonics"],
     subs: [
       {
@@ -143,7 +147,9 @@ export const categories: Category[] = [
     en: "Optical Components",
     descZh: "透鏡、反射鏡、稜鏡、濾波片、繞射光學元件(DOE)、雷射級光學與非線性晶體。",
     descEn: "Lenses, mirrors, prisms, filters, diffractive optics (DOE), laser-grade optics and nonlinear crystals.",
-    image: "/products/optics.svg",
+    image: "/products/optics.jpg",
+    imageCredit: "Jan Helebrant / Wikimedia Commons, CC0",
+    imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Glass_optical_prism_002_(52277188123).jpg",
     brands: ["Thorlabs", "DHC 大恒光電", "恒洋光學", "Chroma", "EKSMA Optics", "IDEX (Semrock)", "OptiGrate", "Alluxa"],
     subs: [
       {
@@ -477,7 +483,9 @@ export const categories: Category[] = [
     en: "Fiber & Optical Communication",
     descZh: "各式光纖與光纖束、拉曼/螢光探頭,以及準直器、跳線、耦合器、分路器、衰減器與環形器。",
     descEn: "Fibers and fiber bundles, Raman / fluorescence probes, plus collimators, patch cords, couplers, splitters, attenuators and circulators.",
-    image: "/products/fiber.svg",
+    image: "/products/fiber.jpg",
+    imageCredit: "Christophe Finot / Wikimedia Commons, CC BY-SA 3.0",
+    imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Fibre_OM4_.jpg",
     brands: [],
     subs: [
       {
@@ -593,7 +601,9 @@ export const categories: Category[] = [
     en: "Detectors & Sensors",
     descZh: "Ge / InGaAs / APD / 多單元光電二極體與光偵測器模組。",
     descEn: "Ge / InGaAs / APD / multi-cell photodiodes and photodetector modules.",
-    image: "/products/detectors.svg",
+    image: "/products/detectors.jpg",
+    imageCredit: "Mister rf / Wikimedia Commons, CC BY-SA 4.0",
+    imageCreditUrl: "https://commons.wikimedia.org/wiki/File:DF1_Germanium_photodiode.jpg",
     brands: ["GPD Optoelectronics"],
     subs: [
       {
@@ -639,7 +649,9 @@ export const categories: Category[] = [
     en: "Microscopy & Imaging",
     descZh: "顯微鏡、顯微物鏡、工業相機與變焦/定焦/顯微鏡頭。",
     descEn: "Microscopes, microscope objectives, industrial cameras and zoom / fixed / micro lenses.",
-    image: "/products/imaging.svg",
+    image: "/products/imaging.jpg",
+    imageCredit: "Shixart1985 / Wikimedia Commons, CC BY 2.0",
+    imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Close-up_of_the_objective_lenses_of_a_microscope.jpg",
     brands: ["Mitutoyo", "致旗", "超眼", "瑞顯光學"],
     subs: [
       {

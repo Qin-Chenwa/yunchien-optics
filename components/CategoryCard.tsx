@@ -11,16 +11,13 @@ export default function CategoryCard({ category }: { category: Category }) {
       href={`/products/${category.slug}`}
       className="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-brand hover:shadow-md"
     >
-      <div className="relative">
+      <div className="overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={category.image}
           alt={lang === "zh" ? category.zh : category.en}
           className="h-40 w-full object-cover transition duration-300 group-hover:scale-[1.03]"
         />
-        <span className="absolute left-3 top-3 grid h-9 w-9 place-items-center rounded-lg bg-white/90 text-xl shadow-sm">
-          {category.icon}
-        </span>
       </div>
       <div className="flex flex-1 flex-col p-5">
         <h3 className="text-base font-semibold text-slate-900 group-hover:text-brand">

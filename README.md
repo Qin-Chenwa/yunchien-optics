@@ -19,7 +19,7 @@
 ## 特色
 
 - 中英雙語切換（右上角 EN / 中，記憶於 localStorage）
-- 12 大類、76 細項,資料集中於 `data/catalog.ts`,一處維護、全站套用
+- 12 大類、109 細項,每個細項都有中英文說明,資料集中於 `data/catalog.ts`,一處維護、全站套用
 - 每個分類都有主圖,首頁另有主視覺
 - 線上詢價表單（`/inquiry`）＋ 後端接收端點（`/api/inquiry`,預留 Email / DB / CRM 串接）
 - 靜態化產品分類頁（`generateStaticParams`）、SEO metadata
@@ -91,13 +91,18 @@ public/products/*.svg   # 各分類主圖
   slug: "lasers",              // 網址用,對應 /products/lasers
   zh: "雷射與光源",
   en: "Lasers & Light Sources",
-  descZh: "...",
+  descZh: "...",               // 分類說明(卡片與分類頁)
   descEn: "...",
-  icon: "🔦",                  // 卡片左上角的小圖示
   image: "/products/lasers.svg",
   brands: ["CNI", "CrystaLaser"],
   subs: [
-    { slug: "hene", zh: "氦氖雷射", en: "Helium-Neon Lasers" },
+    {
+      slug: "hene",
+      zh: "氦氖雷射",
+      en: "Helium-Neon Lasers",
+      descZh: "...",           // 細項說明(分類頁的小卡)
+      descEn: "...",
+    },
   ],
 }
 ```

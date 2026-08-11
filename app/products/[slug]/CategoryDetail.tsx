@@ -21,16 +21,13 @@ export default function CategoryDetail({ category }: { category: Category }) {
         />
       </div>
 
-      <div className="mt-6 flex items-start gap-4">
-        <div className="text-4xl">{category.icon}</div>
-        <div>
-          <h1 className="text-2xl font-bold text-slate-900">
-            {lang === "zh" ? category.zh : category.en}
-          </h1>
-          <p className="mt-1 max-w-2xl text-slate-600">
-            {lang === "zh" ? category.descZh : category.descEn}
-          </p>
-        </div>
+      <div className="mt-6">
+        <h1 className="text-2xl font-bold text-slate-900">
+          {lang === "zh" ? category.zh : category.en}
+        </h1>
+        <p className="mt-1 max-w-3xl text-slate-600">
+          {lang === "zh" ? category.descZh : category.descEn}
+        </p>
       </div>
 
       {/* Brands */}
@@ -57,6 +54,9 @@ export default function CategoryDetail({ category }: { category: Category }) {
           >
             <div>
               <div className="font-medium text-slate-800">{lang === "zh" ? s.zh : s.en}</div>
+              <p className="mt-2 text-sm leading-relaxed text-slate-500">
+                {lang === "zh" ? s.descZh : s.descEn}
+              </p>
             </div>
             <Link
               href={`/inquiry?category=${encodeURIComponent(

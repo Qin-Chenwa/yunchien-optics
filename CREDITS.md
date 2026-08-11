@@ -27,18 +27,39 @@
 
 ## ⚠️ 產品細項照片(`public/products/items/`、`public/hero.jpg`)
 
-這批照片(66 張)來自本機 `~/Downloads/Telegram Desktop/商品圖片`,該資料夾是以
-`anjun_crawler.py` 從 **anjun.com.tw** 抓下來的第三方網站商品圖,僅做了裁切、縮放與
-背景補白處理。**這些圖沒有取得授權,上線前必須逐一確認來源與使用許可。**
+109 個細項中有 **107 項**配了照片,全部取自三個第三方網站,僅做裁切、縮放與背景補白。
+**這些圖都沒有取得授權,上線前必須逐一確認來源與使用許可。**
 
-處理時已排除帶有他家浮水印或版位的圖(ANJUN logo、337nm.com、天諾翔廣告圖等),
-但圖上仍留有各原廠自身的品牌標(CrystaLaser、SMART SENSOR、Elitech、COSSIM、
-Superèyes、恒洋光學、DHC 等)——那是原廠產品照的正常情況,是否可用仍取決於原廠授權。
+| 來源 | 張數 | 取得方式 |
+| --- | --- | --- |
+| anjun.com.tw(安均科技) | 67 | `anjun_crawler.py` 抓下的商品圖 + 除濕機頁 |
+| oceanhoodtw.com(台灣如海光電) | 34 | 產品頁 `og:image` |
+| arno-eo.com(亞諾光電) | 13 | 產品頁 `upload/` 原圖 |
 
-替換方式:直接覆蓋 `public/products/items/<分類>/<細項>.jpg` 同名檔案即可,
-不需要動 `data/catalog.ts`。刪掉檔案則該細項會自動改顯示佔位圖。
+未配到照片、顯示佔位圖的兩項:`spectroscopy/wavefront`(光波前分析儀)、
+`safety/viewer`(紫外/紅外線觀測器)——三個站都沒有對應產品。
 
-`public/hero.jpg` 為同一批來源(CNI OEM 雷射組),同樣需要確認授權。
+### 已排除的圖
+
+帶他家浮水印或屬於廣告版位的一律不用:ANJUN logo、337nm.com、天諾翔廣告圖。
+
+### ⚠️ 仍帶同業品牌標的圖
+
+下列圖片的機殼上印有**如海光電的標誌**(OCEANHOOD.TW / Oceanhood Taiwan),
+如海是同業代理商,放在云謙站上並不妥,建議優先替換:
+
+`spectroscopy/raman`、`spectroscopy/fluorescence`、`spectroscopy/field-spec`、
+`spectroscopy/multi-angle`、`lasers/spectral-source`
+
+其餘圖片上的原廠標(CrystaLaser、SMART SENSOR、Elitech、EKSMA、GPD、SCANLAB、
+COSSIM、Superèyes、恒洋光學、DHC 等)是原廠產品照的正常情況,是否可用取決於原廠授權。
+
+### 替換方式
+
+直接覆蓋 `public/products/items/<分類>/<細項>.jpg` 同名檔案即可,不需要動
+`data/catalog.ts`。刪掉檔案並移除該行,細項會自動改顯示佔位圖。
+
+`public/hero.jpg` 為 anjun 來源(CNI OEM 雷射組),同樣需要確認授權。
 
 ## 專案自行產生的示意圖
 

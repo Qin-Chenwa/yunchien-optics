@@ -89,6 +89,7 @@ export const categories: Category[] = [
         en: "CO₂ Lasers",
         descZh: "10.6μm 中紅外輸出,對壓克力、木材、皮革、玻璃等非金屬材料吸收率高,是切割雕刻與打標的主力光源。",
         descEn: "Mid-infrared output at 10.6μm is strongly absorbed by acrylic, wood, leather and glass, making these the workhorse source for non-metal cutting, engraving and marking.",
+        image: "/products/items/lasers/co2.jpg",
       },
       {
         slug: "pulsed",
@@ -112,6 +113,7 @@ export const categories: Category[] = [
         en: "Spectral Sources (D₂ / Xe / Halogen)",
         descZh: "氘燈補紫外、鹵素燈補可見與近紅外、氙燈提供高亮度全波段,亦有氘鹵與氙鹵混合機型可一次涵蓋寬波段。",
         descEn: "Deuterium for the UV, halogen for visible and near-IR, xenon for high-brightness full-range output — with deuterium-halogen and xenon-halogen hybrids covering a wide band in one unit.",
+        image: "/products/items/lasers/spectral-source.jpg",
       },
       {
         slug: "calibration-source",
@@ -119,6 +121,7 @@ export const categories: Category[] = [
         en: "Calibration Light Sources",
         descZh: "提供已知譜線位置或已知輻射強度的參考光源,用於光譜儀的波長校正與絕對強度校正。",
         descEn: "Reference sources with known emission lines or known radiometric output, used for wavelength calibration and absolute-intensity calibration of spectrometers.",
+        image: "/products/items/lasers/calibration-source.jpg",
       },
       {
         slug: "tunable-source",
@@ -150,6 +153,7 @@ export const categories: Category[] = [
         en: "Infrared Emitters",
         descZh: "中紅外熱輻射光源,光譜連續且穩定,常作為紅外吸收光譜與氣體分析儀的照明端。",
         descEn: "Mid-infrared thermal emitters with a continuous, stable spectrum — typically the illumination end of infrared absorption spectrometers and gas analysers.",
+        image: "/products/items/lasers/ir-emitter.jpg",
       },
     ],
   },
@@ -298,6 +302,7 @@ export const categories: Category[] = [
         en: "Optics Care Supplies",
         descZh: "無塵拭鏡紙、光學級溶劑、吹球與清潔工具,以正確程序清潔鍍膜面,避免刮傷與殘留造成損傷。",
         descEn: "Lint-free lens tissue, optical-grade solvents, blowers and cleaning tools for cleaning coated surfaces properly, avoiding the scratches and residue that lead to damage.",
+        image: "/products/items/optics/optics-care.jpg",
       },
     ],
   },
@@ -388,6 +393,7 @@ export const categories: Category[] = [
         en: "Irises & Apertures",
         descZh: "可變孔徑光闌,用來裁切光束邊緣、限制雜散光,或作為光路對準的基準點。",
         descEn: "Variable apertures used to trim beam edges, block stray light, or serve as reference points when aligning a path.",
+        image: "/products/items/optomech/iris.jpg",
       },
       {
         slug: "adapter",
@@ -422,6 +428,7 @@ export const categories: Category[] = [
         en: "Raman Systems (532–1064nm)",
         descZh: "532、633、671、785、830、1064nm 等激發波長可選:短波長訊號強、長波長螢光背景低,依樣品特性取捨,亦有顯微拉曼架構。",
         descEn: "Excitation at 532, 633, 671, 785, 830 or 1064nm — shorter lines give stronger signal, longer lines lower fluorescence background — plus microscope-coupled Raman configurations.",
+        image: "/products/items/spectroscopy/raman.jpg",
       },
       {
         slug: "raman-handheld",
@@ -429,6 +436,7 @@ export const categories: Category[] = [
         en: "Handheld Raman Spectrometers",
         descZh: "電池供電的攜行式機種,內建比對資料庫可現場辨識物質,適合原料入庫查驗與稽查用途。",
         descEn: "Battery-powered portable units with an onboard reference library for on-site material identification — for incoming-material checks and field inspection.",
+        image: "/products/items/spectroscopy/raman-handheld.jpg",
       },
       {
         slug: "fluorescence",
@@ -436,6 +444,7 @@ export const categories: Category[] = [
         en: "Fluorescence Systems",
         descZh: "以特定波長激發樣品並量測其放光光譜,搭配濾片組抑制激發殘光,用於材料發光特性與生醫標定分析。",
         descEn: "Excite a sample at a chosen wavelength and measure its emission spectrum, with filter sets suppressing residual excitation — for material luminescence and biomedical labelling studies.",
+        image: "/products/items/spectroscopy/fluorescence.jpg",
       },
       {
         slug: "micro-area",
@@ -443,6 +452,7 @@ export const categories: Category[] = [
         en: "Micro-Area Spectral Systems",
         descZh: "結合顯微光學與光譜儀,把量測區域縮到微米等級,可針對薄膜、鍍層與元件局部做點對點分析。",
         descEn: "Microscope optics coupled to a spectrometer shrink the measurement area to the micron scale, allowing point-by-point analysis of films, coatings and local device regions.",
+        image: "/products/items/spectroscopy/micro-area.jpg",
       },
       {
         slug: "field-spec",
@@ -450,6 +460,7 @@ export const categories: Category[] = [
         en: "Field Spectrometers",
         descZh: "戶外量測植被、土壤與水體反射光譜的機型,配合遮光與參考板附件,供遙測驗證與農林研究使用。",
         descEn: "Field instruments for measuring vegetation, soil and water reflectance outdoors, with shading and reference-panel accessories for remote-sensing validation and agroforestry research.",
+        image: "/products/items/spectroscopy/field-spec.jpg",
       },
       {
         slug: "handheld-spec",
@@ -465,6 +476,7 @@ export const categories: Category[] = [
         en: "Multi-Angle Spectral Systems",
         descZh: "以可調的入射與收光角度量測反射光譜,用於描述表面的角度相依特性,如珠光塗料、鍍膜與織物。",
         descEn: "Measure reflectance with adjustable illumination and detection angles to characterise angle-dependent surfaces such as pearlescent coatings, thin films and textiles.",
+        image: "/products/items/spectroscopy/multi-angle.jpg",
       },
       {
         slug: "luminous-flux",
@@ -472,6 +484,7 @@ export const categories: Category[] = [
         en: "Luminous Flux Systems",
         descZh: "積分球搭配校正光譜儀,量測燈具與 LED 的總光通量、色溫、顯色指數與光效等照明參數。",
         descEn: "An integrating sphere with a calibrated spectrometer measures total luminous flux, colour temperature, CRI and efficacy for luminaires and LEDs.",
+        image: "/products/items/spectroscopy/luminous-flux.jpg",
       },
       {
         slug: "monochromator",
@@ -510,6 +523,7 @@ export const categories: Category[] = [
         en: "Polarization Analyzers",
         descZh: "量測偏振態、消光比與偏振度,用於偏振元件驗收與光纖鏈路的偏振相關損耗評估。",
         descEn: "Measure polarization state, extinction ratio and degree of polarization — for acceptance testing of polarization optics and assessing polarization-dependent loss in fiber links.",
+        image: "/products/items/spectroscopy/polarimeter.jpg",
       },
       {
         slug: "spectrum-analyzer",
@@ -538,6 +552,7 @@ export const categories: Category[] = [
         en: "Optical Fibers (QP / QR / Broadband)",
         descZh: "單芯傳輸光纖與反射式探頭光纖,涵蓋 UV-VIS-NIR 寬波段,另有抗紫外衰減材質可延長紫外應用壽命。",
         descEn: "Single-core transmission fibers and reflection probe fibers covering the UV-VIS-NIR range, with solarization-resistant grades that extend life in UV applications.",
+        image: "/products/items/fiber/fiber-patch.jpg",
       },
       {
         slug: "fiber-custom",
@@ -545,6 +560,7 @@ export const categories: Category[] = [
         en: "Custom Fibers",
         descZh: "依芯徑、長度、接頭型式、被覆材質與耐溫需求訂製,適合儀器整合與特殊環境佈設。",
         descEn: "Built to specified core diameter, length, connector type, jacket material and temperature rating — for instrument integration and demanding installations.",
+        image: "/products/items/fiber/fiber-custom.jpg",
       },
       {
         slug: "fiber-bundle",
@@ -552,6 +568,7 @@ export const categories: Category[] = [
         en: "Fiber Bundles (Circular-to-Linear / Linear)",
         descZh: "多芯集束,入光端為圓形以配合光源、出光端排成線形以配合光譜儀狹縫,提高耦合效率。",
         descEn: "Multi-core bundles with a circular input to match the source and a linear output to match the spectrometer slit, raising coupling efficiency.",
+        image: "/products/items/fiber/fiber-bundle.jpg",
       },
       {
         slug: "hollow-fiber",
@@ -559,6 +576,7 @@ export const categories: Category[] = [
         en: "Mid-Far IR Hollow Fibers",
         descZh: "以空心結構傳導中遠紅外光,避開一般玻璃在該波段的強吸收,用於紅外光譜與 CO₂ 雷射導光。",
         descEn: "A hollow structure guides mid- and far-infrared light past the strong absorption of ordinary glass in that band — for IR spectroscopy and CO₂ laser delivery.",
+        image: "/products/items/fiber/hollow-fiber.jpg",
       },
       {
         slug: "homogenizer-fiber",
@@ -566,6 +584,7 @@ export const categories: Category[] = [
         en: "Rectangular Homogenizing Fibers",
         descZh: "矩形芯結構在傳輸過程中打散能量分布,出光端得到均勻的矩形光斑,適合面照明與加工均勻性要求。",
         descEn: "A rectangular core scrambles the energy distribution during propagation, delivering a uniform rectangular spot for area illumination and uniformity-critical processing.",
+        image: "/products/items/fiber/homogenizer-fiber.jpg",
       },
       {
         slug: "bifurcated",
@@ -573,6 +592,7 @@ export const categories: Category[] = [
         en: "Bifurcated Fibers",
         descZh: "一端集束、另一端分成兩支,可同時接光源與偵測器,是反射與螢光量測常用的接法。",
         descEn: "One common end splits into two legs so a source and a detector can share the same probe point — the usual arrangement for reflection and fluorescence measurement.",
+        image: "/products/items/fiber/bifurcated.jpg",
       },
       {
         slug: "fiber-conduit",
@@ -580,6 +600,7 @@ export const categories: Category[] = [
         en: "Fiber Conduits",
         descZh: "金屬或塑膠保護導管,限制彎曲半徑並抵抗拉扯與壓迫,延長光纖在現場佈設下的壽命。",
         descEn: "Metal or plastic protective conduit that limits bend radius and resists pulling and crushing, extending fiber life in field installations.",
+        image: "/products/items/fiber/fiber-conduit.jpg",
       },
       {
         slug: "fiber-inspect",
@@ -587,6 +608,7 @@ export const categories: Category[] = [
         en: "Fiber Inspection Pens",
         descZh: "紅光可見光源,沿光纖注入後可直接看出斷點、彎折過度與接頭鬆脫,是現場排查的基本工具。",
         descEn: "A visible red source injected into the fiber reveals breaks, over-tight bends and loose connectors by eye — the basic field troubleshooting tool.",
+        image: "/products/items/fiber/fiber-inspect.jpg",
       },
       {
         slug: "probe",
@@ -594,6 +616,7 @@ export const categories: Category[] = [
         en: "Raman & Fluorescence Probes (405–1064nm)",
         descZh: "探頭內建激發濾片與收光濾片,抑制光纖本身的背景訊號,對應 405 至 1064nm 各激發波長。",
         descEn: "Probes with built-in excitation and collection filters suppress the fiber's own background signal, matched to excitation lines from 405 to 1064nm.",
+        image: "/products/items/fiber/probe.jpg",
       },
       {
         slug: "collimator",
@@ -617,6 +640,7 @@ export const categories: Category[] = [
         en: "Couplers & Connectors",
         descZh: "連接與轉接不同介面的光纖鏈路,端面研磨品質直接影響插入損耗與回波損耗。",
         descEn: "Join and adapt fiber links across interface types; end-face polish quality directly determines insertion loss and return loss.",
+        image: "/products/items/fiber/coupler.jpg",
       },
       {
         slug: "splitter",
@@ -624,6 +648,7 @@ export const categories: Category[] = [
         en: "Optical Splitters",
         descZh: "把一路光訊號分成多路輸出,PLC 型式分光比均勻、波長相依性低,常用於被動光網路佈建。",
         descEn: "Divide one optical signal into several outputs; PLC types give even split ratios with low wavelength dependence, typical of passive optical network builds.",
+        image: "/products/items/fiber/splitter.jpg",
       },
       {
         slug: "attenuator",
@@ -631,6 +656,7 @@ export const categories: Category[] = [
         en: "Fiber Attenuators",
         descZh: "固定式與可調式衰減器,將光功率降到接收端的線性工作範圍內,避免飽和造成誤碼。",
         descEn: "Fixed and variable attenuators bring optical power down into the receiver's linear range, preventing saturation and the bit errors that follow.",
+        image: "/products/items/fiber/attenuator.jpg",
       },
       {
         slug: "circulator",
@@ -638,6 +664,7 @@ export const categories: Category[] = [
         en: "Fiber Circulators",
         descZh: "三埠非互易元件,讓光只能依固定方向流轉,用於分離同一條光纖上的來回訊號。",
         descEn: "Three-port non-reciprocal devices that route light in one fixed direction, separating forward and return signals sharing a single fiber.",
+        image: "/products/items/fiber/circulator.jpg",
       },
     ],
   },
@@ -658,6 +685,7 @@ export const categories: Category[] = [
         en: "Ge Photodiodes",
         descZh: "鍺材料響應涵蓋約 800–1800nm,是近紅外量測中成本與性能平衡的選擇。",
         descEn: "Germanium responds from roughly 800 to 1800nm, a cost-effective choice for near-infrared measurement.",
+        image: "/products/items/detectors/ge.jpg",
       },
       {
         slug: "ingaas",
@@ -665,6 +693,7 @@ export const categories: Category[] = [
         en: "InGaAs Photodiodes",
         descZh: "涵蓋 900–2600nm,暗電流低、響應速度快,是光通訊與近紅外光譜的主流偵測器。",
         descEn: "Covering 900 to 2600nm with low dark current and fast response — the mainstream detector for optical communication and NIR spectroscopy.",
+        image: "/products/items/detectors/ingaas.jpg",
       },
       {
         slug: "apd",
@@ -672,6 +701,7 @@ export const categories: Category[] = [
         en: "Avalanche Photodiodes (APD)",
         descZh: "利用崩潰倍增在元件內先放大訊號,適合微弱光與長距離測距等對訊噪比要求高的場合。",
         descEn: "Avalanche multiplication amplifies the signal inside the device, suiting weak-light detection and long-range ranging where SNR is critical.",
+        image: "/products/items/detectors/apd.jpg",
       },
       {
         slug: "multicell",
@@ -679,6 +709,7 @@ export const categories: Category[] = [
         en: "Multi-Cell Photodiodes",
         descZh: "單一封裝內含二象限或四象限感光區,比較各區訊號差即可取得光斑位置,用於對準與位置回授。",
         descEn: "Two- or four-quadrant active areas in one package; comparing the segment signals yields spot position for alignment and position feedback.",
+        image: "/products/items/detectors/multicell.jpg",
       },
       {
         slug: "detector-module",
@@ -757,7 +788,7 @@ export const categories: Category[] = [
     en: "Spatial Light Modulators (SLM)",
     descZh: "穿透式、振幅調制與相位調制反射式空間光調制器。",
     descEn: "Transmissive, amplitude-modulating and phase-modulating reflective SLMs.",
-    image: "/products/slm.svg",
+    image: "/products/items/slm/_.jpg",
     brands: [],
     subs: [
       {
@@ -766,6 +797,7 @@ export const categories: Category[] = [
         en: "Transmissive SLM",
         descZh: "光線直接穿過面板進行調制,光路配置直觀、架設簡單,適合教學與原理驗證性實驗。",
         descEn: "Light is modulated as it passes straight through the panel, giving a simple, intuitive layout well suited to teaching and proof-of-principle work.",
+        image: "/products/items/slm/transmissive.jpg",
       },
       {
         slug: "amplitude",
@@ -773,6 +805,7 @@ export const categories: Category[] = [
         en: "Amplitude-Modulating Reflective SLM",
         descZh: "逐畫素控制反射光強度,等同一片可即時改寫的動態光罩,用於結構光投影與光場調控。",
         descEn: "Per-pixel control of reflected intensity acts as a dynamic, rewritable mask — for structured-light projection and light-field control.",
+        image: "/products/items/slm/amplitude.jpg",
       },
       {
         slug: "phase",
@@ -780,6 +813,7 @@ export const categories: Category[] = [
         en: "Phase-Modulating Reflective SLM",
         descZh: "只改變相位而不損失光能,可即時產生全像圖案、多焦點與像差補償,是光鑷與自適應光學的核心元件。",
         descEn: "Changes phase without discarding optical power, generating holograms, multiple foci and aberration correction in real time — central to optical tweezers and adaptive optics.",
+        image: "/products/items/slm/phase.jpg",
       },
     ],
   },
@@ -806,6 +840,7 @@ export const categories: Category[] = [
         en: "Laser Safety Shielding",
         descZh: "防護簾、圍板與光路罩,把散射與反射光限制在工作區內,是雷射實驗室與加工站的基本安全配置。",
         descEn: "Curtains, panels and beam enclosures confine scattered and reflected light to the work area — baseline safety equipment for laser labs and processing stations.",
+        image: "/products/items/safety/laser-safety.jpg",
       },
       {
         slug: "ir-card",
@@ -813,6 +848,7 @@ export const categories: Category[] = [
         en: "IR Detection Cards",
         descZh: "以螢光材料把不可見的紅外光轉成可見亮點,不必上電就能在對光路時確認光束位置。",
         descEn: "A phosphor converts invisible infrared into a visible spot, letting you confirm beam position during alignment without any power source.",
+        image: "/products/items/safety/ir-card.jpg",
       },
       {
         slug: "viewer",
@@ -862,6 +898,7 @@ export const categories: Category[] = [
         en: "Industrial Dehumidifiers",
         descZh: "控制實驗室與倉儲濕度,避免光學鍍膜受潮、樣品變質與電子設備結露損壞。",
         descEn: "Control humidity in labs and storage to prevent damage to optical coatings, sample degradation and condensation on electronics.",
+        image: "/products/items/environmental/dehumidifier.jpg",
       },
     ],
   },
@@ -880,6 +917,7 @@ export const categories: Category[] = [
         en: "Integrating Spheres",
         descZh: "內壁高反射塗層讓光多次漫反射後均勻化,用於總光通量、反射率與穿透率的絕對量測。",
         descEn: "A highly reflective inner coating homogenises light through multiple diffuse reflections — for absolute measurement of total flux, reflectance and transmittance.",
+        image: "/products/items/consumables/integrating-sphere.jpg",
       },
       {
         slug: "cuvette",
@@ -887,6 +925,7 @@ export const categories: Category[] = [
         en: "Quartz Cuvettes",
         descZh: "石英材質在紫外波段穿透良好,光程長度標準化,是吸收與螢光量測的標準樣品容器。",
         descEn: "Quartz transmits well in the UV and the path length is standardised — the standard sample holder for absorption and fluorescence measurement.",
+        image: "/products/items/consumables/cuvette.jpg",
       },
       {
         slug: "reflectance-standard",
@@ -894,6 +933,7 @@ export const categories: Category[] = [
         en: "Diffuse Reflectance Standards",
         descZh: "已知反射率的白板或灰板,作為反射光譜量測的基準,量測前先取參考值再換上樣品。",
         descEn: "White or grey panels of known reflectance used as the reference for reflectance spectroscopy — a baseline is taken before the sample is measured.",
+        image: "/products/items/consumables/reflectance-standard.jpg",
       },
       {
         slug: "wipes",
@@ -901,6 +941,7 @@ export const categories: Category[] = [
         en: "Wipes & Cleanroom Supplies",
         descZh: "低落塵擦拭紙、手套與無塵耗材,維持光學元件與樣品在潔淨條件下操作。",
         descEn: "Low-lint wipes, gloves and cleanroom consumables that keep optics and samples handled under clean conditions.",
+        image: "/products/items/consumables/wipes.jpg",
       },
       {
         slug: "sampling-stand",
@@ -916,6 +957,7 @@ export const categories: Category[] = [
         en: "Field Measurement Accessories",
         descZh: "戶外量測用的支臂、遮光罩、視角限制器與參考板,降低環境雜散光對反射光譜的干擾。",
         descEn: "Booms, shades, field-of-view limiters and reference panels for outdoor work, reducing the effect of ambient stray light on reflectance data.",
+        image: "/products/items/consumables/field-accessory.jpg",
       },
       {
         slug: "adapter-ring",
@@ -923,6 +965,7 @@ export const categories: Category[] = [
         en: "Adapter Rings",
         descZh: "銜接不同螺紋與口徑的光學介面,讓探頭、鏡頭與治具能互相搭配使用。",
         descEn: "Bridge different thread standards and apertures so probes, lenses and fixtures can be combined.",
+        image: "/products/items/consumables/adapter-ring.jpg",
       },
       {
         slug: "fixture",
@@ -930,6 +973,7 @@ export const categories: Category[] = [
         en: "Precision Optical Fixtures",
         descZh: "依樣品形狀客製的夾持與定位治具,確保待測物每次都放在相同位置與角度。",
         descEn: "Holding and locating fixtures made to the sample's shape, ensuring the part sits in the same position and orientation every time.",
+        image: "/products/items/consumables/fixture.jpg",
       },
     ],
   },
@@ -956,6 +1000,7 @@ export const categories: Category[] = [
         en: "Autofocus Modules & Systems",
         descZh: "即時偵測離焦量並回授驅動,補償樣品翹曲與平台起伏,讓加工或取像在移動中維持在焦面上。",
         descEn: "Sense defocus and drive a correction in real time, compensating sample warp and stage runout so processing or imaging stays in focus while moving.",
+        image: "/products/items/systems/autofocus.jpg",
       },
       {
         slug: "flattop",
@@ -963,6 +1008,7 @@ export const categories: Category[] = [
         en: "Flat-Top Beam Subsystems",
         descZh: "整組整形光路把高斯分布轉成能量均勻的平頂光斑,使照射區內每一點得到接近相同的能量密度。",
         descEn: "A complete shaping assembly converts a Gaussian profile into a uniform flat-top spot so every point in the irradiated area receives nearly the same energy density.",
+        image: "/products/items/systems/flattop.jpg",
       },
       {
         slug: "scanner",
@@ -970,6 +1016,7 @@ export const categories: Category[] = [
         en: "Scan Systems & Control Electronics",
         descZh: "振鏡掃描頭搭配控制卡與 F-theta 鏡頭,以高速偏轉光束完成打標、雕刻與選擇性加工。",
         descEn: "Galvanometer scan heads with control boards and F-theta lenses deflect the beam at high speed for marking, engraving and selective processing.",
+        image: "/products/items/systems/scanner.jpg",
       },
       {
         slug: "custom",

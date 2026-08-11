@@ -27,32 +27,45 @@
 
 ## ⚠️ 產品細項照片(`public/products/items/`、`public/hero.jpg`)
 
-109 個細項中有 **107 項**配了照片,全部取自三個第三方網站,僅做裁切、縮放與背景補白。
+109 個細項中有 **103 項**配了照片,全部取自三個第三方網站,僅做裁切、縮放與背景補白。
 **這些圖都沒有取得授權,上線前必須逐一確認來源與使用許可。**
 
 | 來源 | 張數 | 取得方式 |
 | --- | --- | --- |
 | anjun.com.tw(安均科技) | 67 | `anjun_crawler.py` 抓下的商品圖 + 除濕機頁 |
-| oceanhoodtw.com(台灣如海光電) | 34 | 產品頁 `og:image` |
+| oceanhoodtw.com(台灣如海光電) | 30 | 產品頁 `og:image` |
 | arno-eo.com(亞諾光電) | 13 | 產品頁 `upload/` 原圖 |
-
-未配到照片、顯示佔位圖的兩項:`spectroscopy/wavefront`(光波前分析儀)、
-`safety/viewer`(紫外/紅外線觀測器)——三個站都沒有對應產品。
 
 ### 已排除的圖
 
-帶他家浮水印或屬於廣告版位的一律不用:ANJUN logo、337nm.com、天諾翔廣告圖。
+帶他家浮水印、廣告版位、或**同業品牌標**的一律不用:
 
-### ⚠️ 仍帶同業品牌標的圖
+- ANJUN logo、337nm.com 浮水印、天諾翔廣告圖
+- 機殼印有 OCEANHOOD.TW / 台灣如海光電 / Oceanhood Taiwan 的產品照
 
-下列圖片的機殼上印有**如海光電的標誌**(OCEANHOOD.TW / Oceanhood Taiwan),
-如海是同業代理商,放在云謙站上並不妥,建議優先替換:
+如海是同業,其自有品牌產品照幾乎都帶標,已全數逐張確認並排除。
+其中三項改用該站無品牌標的機型:
 
-`spectroscopy/raman`、`spectroscopy/fluorescence`、`spectroscopy/field-spec`、
-`spectroscopy/multi-angle`、`lasers/spectral-source`
+| 細項 | 改用機型 |
+| --- | --- |
+| `lasers/spectral-source` | HL2000-P20 鹵素燈 |
+| `lasers/calibration-source` | AR-1 氬燈校準光源 |
+| `spectroscopy/raman` | EVA3000PLUS 拉曼儀 |
 
 其餘圖片上的原廠標(CrystaLaser、SMART SENSOR、Elitech、EKSMA、GPD、SCANLAB、
-COSSIM、Superèyes、恒洋光學、DHC 等)是原廠產品照的正常情況,是否可用取決於原廠授權。
+Kimtech、COSSIM、Superèyes、恒洋光學、DHC 等)是原廠產品照的正常情況,
+是否可用取決於原廠授權。
+
+### 顯示佔位圖的 6 項
+
+| 細項 | 原因 |
+| --- | --- |
+| `spectroscopy/fluorescence`(螢光光譜系統) | 三站僅如海有,全數帶 LIFS + 如海標 |
+| `spectroscopy/field-spec`(地物光譜儀) | 同上,機殼印有大面積如海標 |
+| `spectroscopy/multi-angle`(多角度光譜量測系統) | 同上,底板印有 Oceanhood Taiwan |
+| `spectroscopy/micro-area`(微區光譜量測系統) | 同上,顯微鏡上貼有 OCEANHOOD TAIWAN |
+| `spectroscopy/wavefront`(光波前分析儀) | 三站都沒有對應產品 |
+| `safety/viewer`(紫外/紅外線觀測器) | 三站都沒有對應產品 |
 
 ### 替換方式
 

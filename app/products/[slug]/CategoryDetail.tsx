@@ -71,7 +71,7 @@ export default function CategoryDetail({ category }: { category: Category }) {
       </section>
 
       <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-        {/* 代理品牌 */}
+        {/* 供應品牌 */}
         {category.brands.length > 0 && (
           <div className="mb-12 rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
             <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400">

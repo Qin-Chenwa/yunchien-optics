@@ -3,32 +3,43 @@
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { categories } from "@/data/catalog";
+import { company } from "@/data/company";
 import { useLang } from "@/lib/i18n";
 
 export default function InquiryForm() {
   const { lang, t } = useLang();
   const params = useSearchParams();
   const presetCategory = params.get("category") ?? "";
+  const presetItem = params.get("item") ?? "";
   const [sent, setSent] = useState(false);
-  const [loading, setLoading] = useState(false);
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  // 站台是靜態託管(GitHub Pages),沒有後端可以收表單,
+  // 所以改成把填好的內容組成信件,交給使用者的郵件軟體寄出。
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setLoading(true);
     const form = new FormData(e.currentTarget);
-    const payload = Object.fromEntries(form.entries());
-    try {
-      await fetch("/api/inquiry", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      setSent(true);
-    } catch {
-      setSent(true); // 骨架:仍顯示成功,實務可加錯誤處理
-    } finally {
-      setLoading(false);
-    }
+    const field = (k: string) => String(form.get(k) ?? "").trim();
+
+    const lines = [
+      [t("f_name"), field("name")],
+      [t("f_company"), field("company")],
+      [t("f_email"), field("email")],
+      [t("f_phone"), field("phone")],
+      [t("f_category"), field("category")],
+      [t("f_item"), field("item")],
+    ]
+      .filter(([, v]) => v)
+      .map(([label, v]) => `${label}: ${v}`);
+
+    const subject = [t("inquiry_title"), field("item") || field("category")]
+      .filter(Boolean)
+      .join(" - ");
+    const body = `${lines.join("\n")}\n\n${t("f_message")}:\n${field("message")}\n`;
+
+    window.location.href = `mailto:${company.email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+    setSent(true);
   }
 
   const input =
@@ -37,8 +48,15 @@ export default function InquiryForm() {
   if (sent) {
     return (
       <div className="mx-auto max-w-2xl px-4 py-20 text-center">
-        <div className="mb-4 text-5xl">✅</div>
+        <div className="mb-4 text-5xl">✉️</div>
         <p className="text-lg font-medium text-slate-800">{t("f_ok")}</p>
+        <p className="mt-3 text-sm text-slate-500">{t("f_ok_hint")}</p>
+        <a
+          href={`mailto:${company.email}`}
+          className="mt-6 inline-block text-sm font-semibold text-brand hover:underline"
+        >
+          {company.email}
+        </a>
       </div>
     );
   }
@@ -93,6 +111,13 @@ export default function InquiryForm() {
           </select>
         </div>
 
+        {presetItem && (
+          <div>
+            <label className="mb-1 block text-sm font-medium text-slate-700">{t("f_item")}</label>
+            <input name="item" readOnly defaultValue={presetItem} className={`${input} bg-slate-50`} />
+          </div>
+        )}
+
         <div>
           <label className="mb-1 block text-sm font-medium text-slate-700">
             {t("f_message")} *
@@ -100,14 +125,42 @@ export default function InquiryForm() {
           <textarea name="message" required rows={5} className={input} />
         </div>
 
-        <button
-          type="submit"
-          disabled={loading}
-          className="rounded-lg bg-brand px-6 py-3 text-sm font-semibold text-white hover:bg-brand-dark disabled:opacity-60"
-        >
-          {t("f_submit")}
-        </button>
+        <div className="flex flex-wrap items-center gap-4 pt-2">
+          <button
+            type="submit"
+            className="rounded-lg bg-brand px-6 py-3 text-sm font-semibold text-white hover:bg-brand-dark"
+          >
+            {t("f_submit")}
+          </button>
+          <p className="text-xs text-slate-400">{t("f_mailto_note")}</p>
+        </div>
       </form>
+
+      <div className="mt-10 rounded-xl border border-slate-200 bg-slate-50/70 p-5 text-sm text-slate-600">
+        <p className="font-medium text-slate-700">{t("nav_contact")}</p>
+        <dl className="mt-3 space-y-1.5">
+          <div className="flex gap-2">
+            <dt className="w-16 shrink-0 text-slate-400">{t("contact_email")}</dt>
+            <dd>
+              <a href={`mailto:${company.email}`} className="text-brand hover:underline">
+                {company.email}
+              </a>
+            </dd>
+          </div>
+          <div className="flex gap-2">
+            <dt className="w-16 shrink-0 text-slate-400">{t("contact_tel")}</dt>
+            <dd>
+              <a href={`tel:${company.tel.replace(/[^0-9+]/g, "")}`} className="hover:text-brand">
+                {company.tel}
+              </a>
+            </dd>
+          </div>
+          <div className="flex gap-2">
+            <dt className="w-16 shrink-0 text-slate-400">{t("contact_fax")}</dt>
+            <dd>{company.fax}</dd>
+          </div>
+        </dl>
+      </div>
     </div>
   );
 }

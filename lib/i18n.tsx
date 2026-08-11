@@ -46,7 +46,15 @@ export const dict: Dict = {
   f_category: { zh: "產品類別", en: "Product Category" },
   f_message: { zh: "需求說明", en: "Requirements" },
   f_submit: { zh: "送出詢價", en: "Submit Inquiry" },
-  f_ok: { zh: "已收到您的詢價,我們會盡快回覆!", en: "Thanks! We have received your inquiry." },
+  f_ok: { zh: "已為您開啟郵件草稿", en: "Your email draft is ready" },
+  f_ok_hint: {
+    zh: "請在郵件軟體中按下寄出,我們收到後會盡快回覆。若沒有自動開啟,請直接來信:",
+    en: "Send it from your mail app and we'll reply shortly. If nothing opened, email us directly:",
+  },
+  f_mailto_note: {
+    zh: "送出後會開啟您的郵件軟體,內容已自動填好",
+    en: "Opens your mail app with the message pre-filled",
+  },
   f_required: { zh: "此為必填", en: "Required" },
   about_title: { zh: "關於云謙", en: "About YUN CHIAN" },
   about_body: {
@@ -64,8 +72,17 @@ export const dict: Dict = {
     en: "No. 32, Guanghua St., Banqiao Dist., New Taipei City, Taiwan",
   },
   footer_rights: { zh: "版權所有", en: "All Rights Reserved" },
-  quote_this: { zh: "詢問此類產品", en: "Inquire this category" },
+  quote_this: { zh: "詢問此項產品", en: "Inquire this item" },
   back_products: { zh: "← 返回產品分類", en: "← Back to products" },
+  stat_categories: { zh: "產品分類", en: "Categories" },
+  stat_items: { zh: "產品細項", en: "Product lines" },
+  stat_brands: { zh: "代理品牌", en: "Brands" },
+  cta_title: { zh: "找不到需要的型號?", en: "Can't find the model you need?" },
+  cta_sub: {
+    zh: "告訴我們應用條件與規格需求,工程團隊會協助選型並提供報價。",
+    en: "Tell us your application and specifications — our engineers will help with selection and pricing.",
+  },
+  f_item: { zh: "詢價項目", en: "Item" },
 };
 
 const LangContext = createContext<{

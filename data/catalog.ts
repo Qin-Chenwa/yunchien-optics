@@ -7,6 +7,7 @@ export interface SubCategory {
   en: string;
   descZh: string;
   descEn: string;
+  image?: string; // 細項照片,放在 public/products/items/<分類>/<細項>.jpg;沒有就顯示佔位圖
 }
 
 export interface Category {
@@ -40,6 +41,7 @@ export const categories: Category[] = [
         en: "Stabilized Lasers (405–1064nm)",
         descZh: "涵蓋 405、473、532、633、671、785、808、830、980、1064nm 等常用波段,功率與波長長時間穩定,適合拉曼、螢光與干涉量測等對光源漂移敏感的應用。",
         descEn: "Covers the common 405, 473, 532, 633, 671, 785, 808, 830, 980 and 1064nm lines with long-term power and wavelength stability — suited to Raman, fluorescence and interferometric measurements that cannot tolerate source drift.",
+        image: "/products/items/lasers/stabilized.jpg",
       },
       {
         slug: "hene",
@@ -47,6 +49,7 @@ export const categories: Category[] = [
         en: "Helium-Neon Lasers",
         descZh: "632.8nm 為主的氣體雷射,光束品質與指向穩定度佳,長年作為干涉儀、對準與教學實驗的參考光源。",
         descEn: "Gas lasers centred on 632.8nm with excellent beam quality and pointing stability — a long-standing reference source for interferometry, alignment and teaching labs.",
+        image: "/products/items/lasers/hene.jpg",
       },
       {
         slug: "solid-state",
@@ -54,6 +57,7 @@ export const categories: Category[] = [
         en: "CW Solid-State Lasers (DPSS)",
         descZh: "二極體激發固態雷射,連續輸出、單一波長,常見 532nm 綠光與其他可見光波段,供顯微、粒子影像與量測光源使用。",
         descEn: "Diode-pumped solid-state lasers with continuous single-wavelength output — commonly 532nm green and other visible lines — for microscopy, particle imaging and general measurement illumination.",
+        image: "/products/items/lasers/solid-state.jpg",
       },
       {
         slug: "diode",
@@ -61,6 +65,7 @@ export const categories: Category[] = [
         en: "Diode Lasers / TEM00",
         descZh: "體積小、效率高的半導體雷射,含高光束品質(TEM00)機型,可選圓形光斑與多種封裝,適合整合進儀器與自動化設備。",
         descEn: "Compact, efficient diode lasers including high-beam-quality (TEM00) models, with circular beam options and multiple package styles for integration into instruments and automated equipment.",
+        image: "/products/items/lasers/diode.jpg",
       },
       {
         slug: "argon",
@@ -68,6 +73,7 @@ export const categories: Category[] = [
         en: "Argon-Ion Lasers",
         descZh: "藍綠光多譜線氣體雷射(常用 488 / 514.5nm),輸出功率高,用於螢光激發、流式細胞術與全像記錄。",
         descEn: "Multi-line blue-green gas lasers (typically 488 / 514.5nm) delivering high output power for fluorescence excitation, flow cytometry and holographic recording.",
+        image: "/products/items/lasers/argon.jpg",
       },
       {
         slug: "fiber-laser",
@@ -75,6 +81,7 @@ export const categories: Category[] = [
         en: "Fiber Lasers",
         descZh: "以摻雜光纖為增益介質,結構免調校、散熱佳、光束品質穩定,適用於雕刻、焊接與長時間連續運轉的產線。",
         descEn: "Doped-fiber gain media give an alignment-free build with good thermal handling and stable beam quality — suited to marking, welding and production lines running continuously.",
+        image: "/products/items/lasers/fiber-laser.jpg",
       },
       {
         slug: "co2",
@@ -89,6 +96,7 @@ export const categories: Category[] = [
         en: "Pulsed / Femtosecond Lasers",
         descZh: "奈秒至飛秒等級的短脈衝雷射,峰值功率高、熱影響區小,用於精密加工、非線性光學與超快時間解析量測。",
         descEn: "Nanosecond to femtosecond pulse widths deliver high peak power with a small heat-affected zone — for precision machining, nonlinear optics and ultrafast time-resolved measurement.",
+        image: "/products/items/lasers/pulsed.jpg",
       },
       {
         slug: "broadband",
@@ -96,6 +104,7 @@ export const categories: Category[] = [
         en: "Broadband Light Sources",
         descZh: "單一機台涵蓋紫外到近紅外的連續光譜,供穿透率、反射率與吸收光譜量測作為照明源。",
         descEn: "A continuous spectrum from the UV through the near-infrared in a single unit, used as the illumination source for transmission, reflectance and absorption measurements.",
+        image: "/products/items/lasers/broadband.jpg",
       },
       {
         slug: "spectral-source",
@@ -117,6 +126,7 @@ export const categories: Category[] = [
         en: "Tunable Wavelength Sources",
         descZh: "以單光儀或濾光模組選出特定窄波段輸出,可掃描波長,用於光譜響應量測與元件波長特性測試。",
         descEn: "A monochromator or filter module selects a narrow output band that can be scanned across wavelength — for spectral-response measurement and component characterisation.",
+        image: "/products/items/lasers/tunable-source.jpg",
       },
       {
         slug: "led-source",
@@ -124,6 +134,7 @@ export const categories: Category[] = [
         en: "LED & Uniform Light Sources",
         descZh: "LED 光源壽命長、開關快、發熱低;搭配積分球或擴散結構可輸出高均勻度面光源,供相機校正與影像檢測使用。",
         descEn: "Long-lived, fast-switching, low-heat LED sources; paired with an integrating sphere or diffuser they provide a highly uniform area source for camera calibration and imaging inspection.",
+        image: "/products/items/lasers/led-source.jpg",
       },
       {
         slug: "curing-source",
@@ -131,6 +142,7 @@ export const categories: Category[] = [
         en: "Drawer-Type Curing Sources",
         descZh: "抽屜式腔體搭配紫外光源,供 UV 膠固化與小型樣品照射,腔體封閉可避免漏光與人員曝露。",
         descEn: "A drawer-style enclosure with a UV source for adhesive curing and small-sample irradiation; the closed chamber prevents stray light and operator exposure.",
+        image: "/products/items/lasers/curing-source.jpg",
       },
       {
         slug: "ir-emitter",
@@ -158,6 +170,7 @@ export const categories: Category[] = [
         en: "Optical Lenses",
         descZh: "平凸、雙凸、平凹、消色差與非球面等各式透鏡,可依波段指定基材與鍍膜,用於聚焦、準直與成像。",
         descEn: "Plano-convex, bi-convex, plano-concave, achromatic and aspheric lenses; substrate and coating are specified to the working band for focusing, collimation and imaging.",
+        image: "/products/items/optics/lens.jpg",
       },
       {
         slug: "mirror",
@@ -165,6 +178,7 @@ export const categories: Category[] = [
         en: "Mirrors",
         descZh: "金屬鍍膜與介電質鍍膜反射鏡,依波段與入射角選擇,提供高反射率與良好面形精度。",
         descEn: "Metallic and dielectric-coated mirrors selected by wavelength band and angle of incidence, offering high reflectance with good surface figure.",
+        image: "/products/items/optics/mirror.jpg",
       },
       {
         slug: "beamsplitter",
@@ -172,6 +186,7 @@ export const categories: Category[] = [
         en: "Beamsplitters",
         descZh: "板式與立方體式分光鏡,可依比例分光或依波長分光(二向色鏡),用於干涉、螢光與多通道量測光路。",
         descEn: "Plate and cube beamsplitters that divide by ratio or by wavelength (dichroic), used in interferometric, fluorescence and multi-channel measurement paths.",
+        image: "/products/items/optics/beamsplitter.jpg",
       },
       {
         slug: "window",
@@ -179,6 +194,7 @@ export const categories: Category[] = [
         en: "Windows",
         descZh: "熔融石英、BK7、藍寶石、CaF₂ 等基材,用於隔離腔體或保護元件,同時維持光路穿透率。",
         descEn: "Fused silica, BK7, sapphire and CaF₂ substrates that seal a chamber or protect a component while preserving transmission through the path.",
+        image: "/products/items/optics/window.jpg",
       },
       {
         slug: "polarizer",
@@ -186,6 +202,7 @@ export const categories: Category[] = [
         en: "Polarizers",
         descZh: "薄膜式、格柵式與稜鏡式偏光元件,提供高消光比,搭配波片可組成偏振控制與光隔離結構。",
         descEn: "Film, wire-grid and prism polarizers with high extinction ratio; combined with waveplates they form polarization-control and isolation assemblies.",
+        image: "/products/items/optics/polarizer.jpg",
       },
       {
         slug: "prism",
@@ -193,6 +210,7 @@ export const categories: Category[] = [
         en: "Prisms",
         descZh: "直角、五角、道威與色散稜鏡等,用於光路轉折、影像正像與分光,依需求指定角度公差與鍍膜。",
         descEn: "Right-angle, penta, Dove and dispersing prisms for beam folding, image erection and dispersion, with angular tolerance and coating specified to the application.",
+        image: "/products/items/optics/prism.jpg",
       },
       {
         slug: "filter",
@@ -200,6 +218,7 @@ export const categories: Category[] = [
         en: "Optical Filters",
         descZh: "帶通、長通、短通、陷波與中性密度濾光片,窄帶機型陡峭度與阻擋深度高,適用螢光與拉曼訊號分離。",
         descEn: "Bandpass, longpass, shortpass, notch and neutral-density filters; narrowband versions offer steep edges and deep blocking for separating fluorescence and Raman signals.",
+        image: "/products/items/optics/filter.jpg",
       },
       {
         slug: "fluorescence-filter",
@@ -207,6 +226,7 @@ export const categories: Category[] = [
         en: "Fluorescence Filter Sets",
         descZh: "激發濾片、二向色鏡與發射濾片成組搭配,依螢光試劑的激發/發射光譜選型,亦有顯微鏡濾片方塊可直接置換。",
         descEn: "Matched excitation filter, dichroic and emission filter sets chosen against a dye's excitation / emission spectra, including microscope filter cubes for direct swap-in.",
+        image: "/products/items/optics/fluorescence-filter.jpg",
       },
       {
         slug: "doe",
@@ -214,6 +234,7 @@ export const categories: Category[] = [
         en: "Diffractive Optical Elements (DOE)",
         descZh: "以微結構繞射控制光場分布,單一薄元件即可完成傳統多鏡片才能做到的整形,體積小且對準容易。",
         descEn: "Micro-structured surfaces diffract light into a designed distribution, achieving in one thin element what would otherwise need a multi-lens assembly — compact and easy to align.",
+        image: "/products/items/optics/doe.jpg",
       },
       {
         slug: "beam-shaper",
@@ -221,6 +242,7 @@ export const categories: Category[] = [
         en: "Laser Beam Shapers",
         descZh: "將高斯光束轉換為平頂、線形、方形或環形分布,使加工能量在作用區內均勻,改善邊緣品質與製程重現性。",
         descEn: "Convert a Gaussian beam into flat-top, line, square or ring distributions so process energy is uniform across the work area, improving edge quality and repeatability.",
+        image: "/products/items/optics/beam-shaper.jpg",
       },
       {
         slug: "beam-splitter-doe",
@@ -228,6 +250,7 @@ export const categories: Category[] = [
         en: "Beam Splitting / Multi-Focus Elements",
         descZh: "把單一雷射光束分成多道等能量子光束,或在光軸上形成多個焦點與延伸焦深,用於並行加工與厚材切割。",
         descEn: "Split one laser beam into multiple equal-energy spots, or form several foci and an extended depth of focus along the axis — for parallel processing and thick-material cutting.",
+        image: "/products/items/optics/beam-splitter-doe.jpg",
       },
       {
         slug: "laser-optics",
@@ -235,6 +258,7 @@ export const categories: Category[] = [
         en: "Laser-Grade Optics",
         descZh: "高損傷閾值鍍膜與嚴格面型、表面缺陷規格,適用於高功率連續與脈衝雷射光路。",
         descEn: "High damage-threshold coatings with tight surface figure and scratch-dig specifications, for high-power CW and pulsed laser paths.",
+        image: "/products/items/optics/laser-optics.jpg",
       },
       {
         slug: "beam-expander",
@@ -242,6 +266,7 @@ export const categories: Category[] = [
         en: "Laser Beam Expanders",
         descZh: "放大光束直徑並降低發散角,可縮小遠距離光斑或配合掃描頭取得更小的聚焦點,部分機型可調倍率。",
         descEn: "Increase beam diameter and reduce divergence to shrink the spot at long range or achieve a tighter focus with a scan head; variable-magnification models are available.",
+        image: "/products/items/optics/beam-expander.jpg",
       },
       {
         slug: "attenuator-module",
@@ -249,6 +274,7 @@ export const categories: Category[] = [
         en: "External Laser Power Attenuators",
         descZh: "以偏光元件組合連續調整輸出功率,雷射本體維持在最佳工作點,避免因調功率而改變光束特性。",
         descEn: "A polarizer-based assembly varies output power continuously while the laser itself stays at its optimum operating point, so beam characteristics do not shift with power.",
+        image: "/products/items/optics/attenuator-module.jpg",
       },
       {
         slug: "crystal",
@@ -256,6 +282,7 @@ export const categories: Category[] = [
         en: "Nonlinear & Laser Crystals",
         descZh: "BBO、LBO、KTP 等非線性晶體與 Nd:YAG 等增益晶體,用於倍頻、和頻、參量振盪與雷射腔體設計。",
         descEn: "Nonlinear crystals such as BBO, LBO and KTP together with gain crystals like Nd:YAG, for frequency doubling, sum-frequency generation, OPO and cavity design.",
+        image: "/products/items/optics/crystal.jpg",
       },
       {
         slug: "holographic",
@@ -263,6 +290,7 @@ export const categories: Category[] = [
         en: "Holographic Recording Film",
         descZh: "高解析度感光材料,可記錄干涉條紋製作全像片與繞射光柵,適合光學實驗與教學使用。",
         descEn: "High-resolution photosensitive media that record interference fringes to produce holograms and diffraction gratings, suited to optics research and teaching.",
+        image: "/products/items/optics/holographic.jpg",
       },
       {
         slug: "optics-care",
@@ -279,7 +307,7 @@ export const categories: Category[] = [
     en: "Opto-Mechanics & Stages",
     descZh: "鏡架、鏡筒、光學桌與桌板、籠式同軸系統、手動位移平台與轉接零件。",
     descEn: "Mounts, tubes, optical tables, cage systems, manual translation stages and adapters.",
-    image: "/products/optomech.svg",
+    image: "/products/items/optomech/_.jpg",
     brands: ["Thorlabs", "EKSMA Optics"],
     subs: [
       {
@@ -288,6 +316,7 @@ export const categories: Category[] = [
         en: "Optical Mounts",
         descZh: "固定式與可調式鏡架,提供俯仰、偏擺與旋轉調整,調整解析度與長期穩定度是光路對準品質的關鍵。",
         descEn: "Fixed and adjustable mounts providing tip, tilt and rotation; adjustment resolution and long-term stability set the quality of the alignment.",
+        image: "/products/items/optomech/mount.jpg",
       },
       {
         slug: "tube",
@@ -295,6 +324,7 @@ export const categories: Category[] = [
         en: "Lens Tubes",
         descZh: "標準螺紋鏡筒與延伸管,把多個元件固定在同軸上並隔絕雜散光,是組裝小型光學系統的基礎件。",
         descEn: "Standard-thread tubes and extensions that hold several elements coaxially while blocking stray light — the building block of compact optical assemblies.",
+        image: "/products/items/optomech/tube.jpg",
       },
       {
         slug: "clamp",
@@ -302,6 +332,7 @@ export const categories: Category[] = [
         en: "Clamps & Base Plates",
         descZh: "壓條、夾具與底板,把元件牢固鎖在光學桌上,兼顧重複定位與快速換裝。",
         descEn: "Clamping forks, fixtures and base plates that lock components firmly to the table while allowing repeatable positioning and quick changeover.",
+        image: "/products/items/optomech/clamp.jpg",
       },
       {
         slug: "rail",
@@ -309,6 +340,7 @@ export const categories: Category[] = [
         en: "Optical Rails",
         descZh: "沿導軌移動滑座即可調整元件間距,保持共軸並附刻度,適合需要頻繁變更配置的實驗光路。",
         descEn: "Carriers slide along a rail to set element spacing while staying coaxial, with a scale for reference — convenient for setups that are reconfigured often.",
+        image: "/products/items/optomech/rail.jpg",
       },
       {
         slug: "table",
@@ -316,6 +348,7 @@ export const categories: Category[] = [
         en: "Optical Tables & Breadboards",
         descZh: "蜂巢結構桌板搭配氣壓隔振腳架,抑制地面與環境振動,是干涉與顯微等高靈敏度量測的必要基礎。",
         descEn: "Honeycomb-core tops on pneumatic isolators suppress floor and ambient vibration — a prerequisite for interferometric and microscopy measurements.",
+        image: "/products/items/optomech/table.jpg",
       },
       {
         slug: "cage",
@@ -323,6 +356,7 @@ export const categories: Category[] = [
         en: "Cage Systems (16 / 30 / 60mm)",
         descZh: "以四根導桿建立固定光軸,元件沿桿滑動即完成同軸對準,16 / 30 / 60mm 三種規格可依光束口徑選用。",
         descEn: "Four rods define a fixed optical axis so components slide into coaxial alignment; 16, 30 and 60mm formats cover different beam apertures.",
+        image: "/products/items/optomech/cage.jpg",
       },
       {
         slug: "stage",
@@ -330,6 +364,7 @@ export const categories: Category[] = [
         en: "Manual Stages (X / XY / Z)",
         descZh: "單軸、雙軸與垂直升降平台,以微分頭驅動,提供微米級解析度與良好的直進性和負載能力。",
         descEn: "Single-axis, XY and vertical stages driven by micrometer heads, offering micron-level resolution with good straightness and load capacity.",
+        image: "/products/items/optomech/stage.jpg",
       },
       {
         slug: "rotation-stage",
@@ -337,6 +372,7 @@ export const categories: Category[] = [
         en: "Rotation & Tilt Stages",
         descZh: "提供角度定位與微調,用於偏振元件轉角、入射角掃描與樣品姿態調整,附刻度與鎖定機構。",
         descEn: "Angular positioning and fine adjustment for polarizer rotation, incidence-angle scans and sample orientation, with graduations and locking.",
+        image: "/products/items/optomech/rotation-stage.jpg",
       },
       {
         slug: "laser-mount",
@@ -344,6 +380,7 @@ export const categories: Category[] = [
         en: "Laser Mounting Hardware",
         descZh: "雷射頭夾持座、高度調整柱與散熱底板,兼顧對準精度與雷射本體的散熱與固定需求。",
         descEn: "Laser head clamps, height posts and heat-sinking base plates that address alignment accuracy alongside the laser's mounting and thermal needs.",
+        image: "/products/items/optomech/laser-mount.jpg",
       },
       {
         slug: "iris",
@@ -358,6 +395,7 @@ export const categories: Category[] = [
         en: "Adapters, Tools & Hardware",
         descZh: "各式螺紋轉接環、支柱、六角工具與螺絲組,解決不同系統規格之間的介面問題。",
         descEn: "Thread adapters, posts, hex tools and screw kits that bridge the interface differences between systems of different standards.",
+        image: "/products/items/optomech/adapter.jpg",
       },
     ],
   },
@@ -367,7 +405,7 @@ export const categories: Category[] = [
     en: "Spectroscopy & Measurement",
     descZh: "光纖光譜儀、拉曼與螢光光譜系統、單光儀,以及功率/能量、光束品質、波前與極化分析儀。",
     descEn: "Fiber-optic spectrometers, Raman / fluorescence systems, monochromators, and power / beam / wavefront / polarization analyzers.",
-    image: "/products/spectroscopy.svg",
+    image: "/products/items/spectroscopy/_.jpg",
     brands: ["Spectral Products", "DataRay"],
     subs: [
       {
@@ -376,6 +414,7 @@ export const categories: Category[] = [
         en: "Fiber Optic Spectrometers (UV–NIR)",
         descZh: "以光纖收光的模組化光譜儀,有泛用、紫外增強、紫外-可見、可見-近紅外與近紅外增強等機型,可依波段與訊噪需求選配光柵與狹縫。",
         descEn: "Modular fiber-coupled spectrometers in general-purpose, UV-enhanced, UV-VIS, VIS-NIR and NIR-enhanced configurations, with grating and slit chosen for the target band and SNR.",
+        image: "/products/items/spectroscopy/fiber-spectrometer.jpg",
       },
       {
         slug: "raman",
@@ -418,6 +457,7 @@ export const categories: Category[] = [
         en: "Handheld Spectrometers",
         descZh: "一體式攜行機種,直接貼樣或近距離量測即可讀值,適合產線抽檢與現場快速判定。",
         descEn: "All-in-one portable units that read out from direct contact or close standoff — for line-side spot checks and quick decisions in the field.",
+        image: "/products/items/spectroscopy/handheld-spec.jpg",
       },
       {
         slug: "multi-angle",
@@ -439,6 +479,7 @@ export const categories: Category[] = [
         en: "Monochromators (1/8–1/2m)",
         descZh: "1/8m 至 1/2m 焦長機種,焦長越長解析度越好、體積也越大,可作為可調光源或掃描式偵測前級。",
         descEn: "Focal lengths from 1/8m to 1/2m — longer focal length means better resolution and a larger footprint — usable as a tunable source or as the front end of a scanning detection setup.",
+        image: "/products/items/spectroscopy/monochromator.jpg",
       },
       {
         slug: "power-meter",
@@ -446,6 +487,7 @@ export const categories: Category[] = [
         en: "Laser Power & Energy Meters",
         descZh: "熱電堆感測頭量測連續功率、光電二極體頭適合低功率、熱釋電頭量測脈衝能量,依功率範圍與波段選配。",
         descEn: "Thermopile heads for CW power, photodiode heads for low power and pyroelectric heads for pulse energy — the head is selected by power range and wavelength.",
+        image: "/products/items/spectroscopy/power-meter.jpg",
       },
       {
         slug: "beam-profiler",
@@ -453,6 +495,7 @@ export const categories: Category[] = [
         en: "Beam Profilers",
         descZh: "量測光斑形狀、直徑、對稱性與 M² 光束品質因子,是雷射驗收與光路調校前後比對的依據。",
         descEn: "Measure spot shape, diameter, symmetry and the M² beam quality factor — the reference for laser acceptance testing and before/after comparison of an alignment.",
+        image: "/products/items/spectroscopy/beam-profiler.jpg",
       },
       {
         slug: "wavefront",
@@ -474,6 +517,7 @@ export const categories: Category[] = [
         en: "Optical & Laser Spectrum Analyzers",
         descZh: "高解析度量測雷射的中心波長、線寬與縱模結構,用於單頻雷射驗證與光通訊通道確認。",
         descEn: "High-resolution measurement of centre wavelength, linewidth and longitudinal mode structure — for verifying single-frequency lasers and confirming communication channels.",
+        image: "/products/items/spectroscopy/spectrum-analyzer.jpg",
       },
     ],
   },
@@ -557,6 +601,7 @@ export const categories: Category[] = [
         en: "Collimators",
         descZh: "把光纖出射的發散光轉為平行光,或反向把自由空間光耦合進光纖,是自由空間與光纖之間的介面元件。",
         descEn: "Turn the diverging output of a fiber into a parallel beam, or couple free-space light back into fiber — the interface between the two domains.",
+        image: "/products/items/fiber/collimator.jpg",
       },
       {
         slug: "patchcord",
@@ -564,6 +609,7 @@ export const categories: Category[] = [
         en: "Patch Cords",
         descZh: "兩端已裝好接頭的成品跳線,提供 SC / LC / FC / ST 等介面與單模、多模選擇,可指定長度。",
         descEn: "Pre-terminated cords in SC / LC / FC / ST interfaces, single-mode or multimode, available in specified lengths.",
+        image: "/products/items/fiber/patchcord.jpg",
       },
       {
         slug: "coupler",
@@ -640,6 +686,7 @@ export const categories: Category[] = [
         en: "Photodetector Modules",
         descZh: "感測器與放大電路整合成模組,直接輸出可讀電壓訊號,省去自行設計前級電路的工夫。",
         descEn: "Sensor and amplifier integrated into one module with a directly usable voltage output, removing the need to design a front-end circuit.",
+        image: "/products/items/detectors/detector-module.jpg",
       },
     ],
   },
@@ -660,6 +707,7 @@ export const categories: Category[] = [
         en: "Microscopes",
         descZh: "生物、金相與體視顯微鏡,可依觀察對象選擇穿透或落射照明,並外接相機做影像記錄。",
         descEn: "Biological, metallurgical and stereo microscopes with transmitted or reflected illumination as the sample requires, and camera ports for image capture.",
+        image: "/products/items/imaging/microscope.jpg",
       },
       {
         slug: "objective",
@@ -667,6 +715,7 @@ export const categories: Category[] = [
         en: "Objectives (Bright-field / BD)",
         descZh: "長工作距離物鏡在高倍下仍留有操作空間,明暗視野機型可同時支援落射暗場觀察表面缺陷。",
         descEn: "Long-working-distance objectives keep clearance at high magnification; bright-dark field types add reflected darkfield for surface defect inspection.",
+        image: "/products/items/imaging/objective.jpg",
       },
       {
         slug: "camera",
@@ -674,6 +723,7 @@ export const categories: Category[] = [
         en: "Industrial Cameras",
         descZh: "依解析度、幀率與介面選型,搭配鏡頭與照明構成自動光學檢測與量測系統的取像端。",
         descEn: "Selected by resolution, frame rate and interface; with lens and lighting they form the acquisition end of automated optical inspection and measurement.",
+        image: "/products/items/imaging/camera.jpg",
       },
       {
         slug: "zoom-lens",
@@ -681,6 +731,7 @@ export const categories: Category[] = [
         en: "High-Resolution Zoom Lenses",
         descZh: "可連續變倍且維持解析度,免換鏡頭即可調整視野範圍,適合尺寸不一的待測物。",
         descEn: "Continuous magnification change without losing resolution, adjusting field of view without swapping lenses — convenient when part sizes vary.",
+        image: "/products/items/imaging/zoom-lens.jpg",
       },
       {
         slug: "fixed-lens",
@@ -688,6 +739,7 @@ export const categories: Category[] = [
         en: "Fixed Focal Length Lenses",
         descZh: "固定焦距、結構單純,畸變與解析度表現穩定,適合視野固定的量測與檢測工位。",
         descEn: "Simple fixed-focal-length designs with stable distortion and resolution — suited to stations where the field of view does not change.",
+        image: "/products/items/imaging/fixed-lens.jpg",
       },
       {
         slug: "micro-lens",
@@ -695,6 +747,7 @@ export const categories: Category[] = [
         en: "Micro / Macro Lenses",
         descZh: "高倍率近距成像鏡頭,可搭配同軸照明觀察細微結構,常用於元件外觀與微結構檢測。",
         descEn: "High-magnification close-focus lenses, often with coaxial illumination, for inspecting component appearance and fine structures.",
+        image: "/products/items/imaging/micro-lens.jpg",
       },
     ],
   },
@@ -736,7 +789,7 @@ export const categories: Category[] = [
     en: "Laser Safety & Viewing",
     descZh: "雷射護目鏡、防護屏蔽、IR 偵測卡與紫外/紅外觀測器。",
     descEn: "Laser goggles, protective shielding, IR detection cards and UV / IR viewers.",
-    image: "/products/safety.svg",
+    image: "/products/items/safety/_.jpg",
     brands: [],
     subs: [
       {
@@ -745,6 +798,7 @@ export const categories: Category[] = [
         en: "Laser Safety Goggles",
         descZh: "依雷射波長與功率選擇對應的光密度(OD)等級,同時要兼顧可見光穿透率,確保操作時仍看得見光路。",
         descEn: "Optical density (OD) rating is chosen against the laser's wavelength and power, balanced against visible transmission so the operator can still see the setup.",
+        image: "/products/items/safety/goggles.jpg",
       },
       {
         slug: "laser-safety",
@@ -775,7 +829,7 @@ export const categories: Category[] = [
     en: "Environmental & Data Logging",
     descZh: "溫溼度數據紀錄器、氣體偵測警報器、照度與功率量測,以及工業除濕機。",
     descEn: "Temperature / humidity data loggers, gas detectors and alarms, illuminance and power measurement, and industrial dehumidifiers.",
-    image: "/products/environmental.svg",
+    image: "/products/items/environmental/_.jpg",
     brands: ["Lascar", "Elitech 精創", "SMART SENSOR 希瑪", "PCsensor"],
     subs: [
       {
@@ -784,6 +838,7 @@ export const categories: Category[] = [
         en: "Temperature & Humidity Data Loggers",
         descZh: "長時間自動記錄溫溼度並可匯出報表,用於實驗室環境監控、冷鏈運送與倉儲條件稽核。",
         descEn: "Log temperature and humidity unattended over long periods with exportable reports — for lab environment monitoring, cold-chain transport and warehouse audits.",
+        image: "/products/items/environmental/datalogger.jpg",
       },
       {
         slug: "gas-detector",
@@ -791,6 +846,7 @@ export const categories: Category[] = [
         en: "Gas Detection & Alarms",
         descZh: "可燃性氣體、有毒氣體與缺氧偵測,支援定點式與攜行式,超標即聲光警報通知現場人員。",
         descEn: "Detection of combustible gases, toxic gases and oxygen deficiency in fixed and portable formats, with audible-visual alarms when thresholds are exceeded.",
+        image: "/products/items/environmental/gas-detector.jpg",
       },
       {
         slug: "illuminance",
@@ -798,6 +854,7 @@ export const categories: Category[] = [
         en: "Illuminance & Power Meters",
         descZh: "量測工作環境照度或光源輸出功率,作為實驗條件記錄與光源衰減追蹤的依據。",
         descEn: "Measure workplace illuminance or source output power, providing a record of experimental conditions and a way to track source degradation.",
+        image: "/products/items/environmental/illuminance.jpg",
       },
       {
         slug: "dehumidifier",
@@ -814,7 +871,7 @@ export const categories: Category[] = [
     en: "Consumables & Sampling",
     descZh: "積分球、比色皿、漫反射標準板、擦拭紙、無塵室用品、採樣支架與精密治具。",
     descEn: "Integrating spheres, cuvettes, diffuse-reflectance standards, wipes, cleanroom supplies, sample holders and precision fixtures.",
-    image: "/products/consumables.svg",
+    image: "/products/items/consumables/_.jpg",
     brands: [],
     subs: [
       {
@@ -851,6 +908,7 @@ export const categories: Category[] = [
         en: "Probe & Sampling Stands",
         descZh: "固定探頭與樣品的相對位置與距離,讓每次量測的幾何條件一致,是提高重現性的關鍵配件。",
         descEn: "Fix the relative position and standoff of probe and sample so the measurement geometry repeats — the key accessory for reproducible data.",
+        image: "/products/items/consumables/sampling-stand.jpg",
       },
       {
         slug: "field-accessory",
@@ -881,7 +939,7 @@ export const categories: Category[] = [
     en: "Modules, Subsystems & Custom",
     descZh: "雷射直寫曝光機、自動對焦模組、平頂光次系統、掃描系統,以及客製化光學/繞射設計與雷射設備維修。",
     descEn: "Laser direct-write exposure, autofocus modules, flat-top subsystems, scan systems, plus custom optics / DOE design and laser equipment service.",
-    image: "/products/systems.svg",
+    image: "/products/items/systems/_.jpg",
     brands: ["Scanlab"],
     subs: [
       {
@@ -890,6 +948,7 @@ export const categories: Category[] = [
         en: "Maskless Laser Direct-Write Exposure",
         descZh: "直接以雷射在光阻上寫出圖案,免製光罩,改版只需改檔案,適合研發階段與少量多樣的樣品製作。",
         descEn: "Writes patterns into photoresist directly with a laser — no mask needed, and a design change is only a file change, suiting R&D and low-volume, high-mix work.",
+        image: "/products/items/systems/direct-write.jpg",
       },
       {
         slug: "autofocus",
@@ -918,6 +977,7 @@ export const categories: Category[] = [
         en: "Custom Optics & DOE Design",
         descZh: "依應用需求進行光學設計、繞射元件圖形計算與製作,從規格討論、模擬到樣品驗證完整配合。",
         descEn: "Optical design, diffractive pattern computation and fabrication to the application's requirements — from specification and simulation through to sample validation.",
+        image: "/products/items/systems/custom.jpg",
       },
       {
         slug: "laser-service",
@@ -925,6 +985,7 @@ export const categories: Category[] = [
         en: "Laser & Peripheral Equipment Service",
         descZh: "雷射本體與週邊設備的檢測、校正與維修,包含光路重新對準、功率確認與耗材更換。",
         descEn: "Inspection, calibration and repair of lasers and their peripherals, including realignment, power verification and consumable replacement.",
+        image: "/products/items/systems/laser-service.jpg",
       },
     ],
   },

@@ -3,4 +3,5 @@ export const company = {
   taxId: "94224123",
   tel: "(02)-29667353",
   fax: "(02)-29662643",
+  email: "yunchian123@gmail.com",
 };

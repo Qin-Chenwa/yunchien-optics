@@ -26,6 +26,12 @@ export default function AboutPage() {
           </dd>
           <dt className="text-slate-400">FAX</dt>
           <dd>{company.fax}</dd>
+          <dt className="text-slate-400">{t("contact_email")}</dt>
+          <dd>
+            <a href={`mailto:${company.email}`} className="text-brand hover:underline">
+              {company.email}
+            </a>
+          </dd>
           <dt className="text-slate-400">{t("contact_addr")}</dt>
           <dd>{t("address_full")}</dd>
         </dl>

@@ -26,6 +26,12 @@ export default function Footer() {
             </a>
           </p>
           <p>FAX:{company.fax}</p>
+          <p>
+            {t("contact_email")}:
+            <a href={`mailto:${company.email}`} className="hover:text-brand">
+              {company.email}
+            </a>
+          </p>
           <p className="mt-1">
             {t("contact_addr")}:{t("address_full")}
           </p>

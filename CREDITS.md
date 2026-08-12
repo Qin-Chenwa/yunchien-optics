@@ -8,17 +8,21 @@
 
 | 檔案 | 分類 | 作者 | 授權 | 原始頁面 |
 | --- | --- | --- | --- | --- |
-| `public/products/optics.jpg` | 光學元件 | Jan Helebrant | CC0（公眾領域貢獻） | https://commons.wikimedia.org/wiki/File:Glass_optical_prism_002_(52277188123).jpg |
-| `public/products/fiber.jpg` | 光纖與光通訊 | Christophe Finot | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Fibre_OM4_.jpg |
-| `public/products/detectors.jpg` | 光偵測器與感測器 | Mister rf | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:DF1_Germanium_photodiode.jpg |
 | `public/products/imaging.jpg` | 顯微與影像 | Shixart1985 | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Close-up_of_the_objective_lenses_of_a_microscope.jpg |
 
 上述檔案皆為原圖等比例縮圖(長邊 1200px)後另存為 JPEG,內容未經裁切或修改。
 
-> `public/products/lasers.jpg` 原本也是這一組(Wikimedia 的雷射二極體模組),
-> 因為畫面是一顆帶線的裸模組、不夠專業,已改用 CrystaLaser 的雙雷射頭實拍
-> (來源同下方安均那批,CrystaLaser 是站上列出的供應品牌),
-> `imageCredit` / `imageCreditUrl` 兩欄已一併移除。
+> 原本這一組有 5 張,其中 4 張因為畫面偏業餘(裸雷射二極體、單顆光電二極體等)
+> 已改用下方安均那批的實拍,`imageCredit` / `imageCreditUrl` 兩欄也一併移除:
+>
+> | 分類主圖 | 改用 |
+> | --- | --- |
+> | `lasers.jpg` | CrystaLaser 雙雷射頭,黃光+藍光光束打在光學桌上 |
+> | `optics.jpg` | DHC 大恒光電鍍膜透鏡組(黑底) |
+> | `fiber.jpg` | 紅光雷射耦合進盤繞光纖(光學桌實拍) |
+> | `detectors.jpg` | 金屬封裝鍺光電二極體(黑底) |
+>
+> `imaging.jpg`(顯微鏡物鏡特寫)維持原樣,仍需依 CC BY 2.0 標示。
 
 ### 授權義務
 

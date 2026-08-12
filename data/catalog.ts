@@ -162,8 +162,6 @@ export const categories: Category[] = [
     descZh: "透鏡、反射鏡、稜鏡、濾波片、繞射光學元件(DOE)、雷射級光學與非線性晶體。",
     descEn: "Lenses, mirrors, prisms, filters, diffractive optics (DOE), laser-grade optics and nonlinear crystals.",
     image: "/products/optics.jpg",
-    imageCredit: "Jan Helebrant / Wikimedia Commons, CC0",
-    imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Glass_optical_prism_002_(52277188123).jpg",
     brands: ["Thorlabs", "DHC 大恒光電", "恒洋光學", "Chroma", "EKSMA Optics", "IDEX (Semrock)", "OptiGrate", "Alluxa"],
     subs: [
       {
@@ -541,8 +539,6 @@ export const categories: Category[] = [
     descZh: "各式光纖與光纖束、拉曼/螢光探頭,以及準直器、跳線、耦合器、分路器、衰減器與環形器。",
     descEn: "Fibers and fiber bundles, Raman / fluorescence probes, plus collimators, patch cords, couplers, splitters, attenuators and circulators.",
     image: "/products/fiber.jpg",
-    imageCredit: "Christophe Finot / Wikimedia Commons, CC BY-SA 3.0",
-    imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Fibre_OM4_.jpg",
     brands: [],
     subs: [
       {
@@ -674,8 +670,6 @@ export const categories: Category[] = [
     descZh: "Ge / InGaAs / APD / 多單元光電二極體與光偵測器模組。",
     descEn: "Ge / InGaAs / APD / multi-cell photodiodes and photodetector modules.",
     image: "/products/detectors.jpg",
-    imageCredit: "Mister rf / Wikimedia Commons, CC BY-SA 4.0",
-    imageCreditUrl: "https://commons.wikimedia.org/wiki/File:DF1_Germanium_photodiode.jpg",
     brands: ["GPD Optoelectronics"],
     subs: [
       {

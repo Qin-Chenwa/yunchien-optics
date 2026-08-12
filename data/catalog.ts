@@ -31,8 +31,6 @@ export const categories: Category[] = [
     descZh: "各波段穩頻雷射、氣體/固態/半導體/光纖雷射,以及光譜量測用的寬頻、校正與可調波長光源。",
     descEn: "Stabilized lasers across all wavelengths, gas / solid-state / diode / fiber lasers, plus broadband, calibration and tunable sources for spectroscopy.",
     image: "/products/lasers.jpg",
-    imageCredit: "Suyash Dwivedi / Wikimedia Commons, CC BY-SA 4.0",
-    imageCreditUrl: "https://commons.wikimedia.org/wiki/File:5mW_Mini_Laser_Diode_Module.jpg",
     brands: ["CNI", "CrystaLaser", "RGB Lase", "Solar", "寧波遠明", "Integrated Optics", "K2 Photonics"],
     subs: [
       {

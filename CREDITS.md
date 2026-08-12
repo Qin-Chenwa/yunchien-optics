@@ -8,13 +8,17 @@
 
 | 檔案 | 分類 | 作者 | 授權 | 原始頁面 |
 | --- | --- | --- | --- | --- |
-| `public/products/lasers.jpg` | 雷射與光源 | Suyash Dwivedi | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:5mW_Mini_Laser_Diode_Module.jpg |
 | `public/products/optics.jpg` | 光學元件 | Jan Helebrant | CC0（公眾領域貢獻） | https://commons.wikimedia.org/wiki/File:Glass_optical_prism_002_(52277188123).jpg |
 | `public/products/fiber.jpg` | 光纖與光通訊 | Christophe Finot | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Fibre_OM4_.jpg |
 | `public/products/detectors.jpg` | 光偵測器與感測器 | Mister rf | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:DF1_Germanium_photodiode.jpg |
 | `public/products/imaging.jpg` | 顯微與影像 | Shixart1985 | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Close-up_of_the_objective_lenses_of_a_microscope.jpg |
 
 上述檔案皆為原圖等比例縮圖(長邊 1200px)後另存為 JPEG,內容未經裁切或修改。
+
+> `public/products/lasers.jpg` 原本也是這一組(Wikimedia 的雷射二極體模組),
+> 因為畫面是一顆帶線的裸模組、不夠專業,已改用 CrystaLaser 的雙雷射頭實拍
+> (來源同下方安均那批,CrystaLaser 是站上列出的供應品牌),
+> `imageCredit` / `imageCreditUrl` 兩欄已一併移除。
 
 ### 授權義務
 

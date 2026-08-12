@@ -21,11 +21,10 @@ export default function Footer() {
           <div className="mb-2 font-medium text-slate-800">{t("nav_contact")}</div>
           <p>
             TEL:
-            <a href={`tel:+886229667353`} className="hover:text-brand">
+            <a href={`tel:${company.tel.replace(/[^0-9+]/g, "")}`} className="hover:text-brand">
               {company.tel}
             </a>
           </p>
-          <p>FAX:{company.fax}</p>
           <p>
             {t("contact_email")}:
             <a href={`mailto:${company.email}`} className="hover:text-brand">

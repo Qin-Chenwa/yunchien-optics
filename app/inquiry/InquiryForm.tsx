@@ -155,10 +155,6 @@ export default function InquiryForm() {
               </a>
             </dd>
           </div>
-          <div className="flex gap-2">
-            <dt className="w-16 shrink-0 text-slate-400">{t("contact_fax")}</dt>
-            <dd>{company.fax}</dd>
-          </div>
         </dl>
       </div>
     </div>

@@ -63,7 +63,6 @@ export const dict: Dict = {
   },
   contact_addr: { zh: "地址", en: "Address" },
   contact_tel: { zh: "電話", en: "TEL" },
-  contact_fax: { zh: "傳真", en: "FAX" },
   contact_email: { zh: "信箱", en: "Email" },
   contact_tax_id: { zh: "統一編號", en: "Tax ID" },
   contact_company_name: { zh: "公司名稱", en: "Company" },

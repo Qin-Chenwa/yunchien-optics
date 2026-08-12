@@ -20,12 +20,13 @@ export default function AboutPage() {
           <dd>{company.taxId}</dd>
           <dt className="text-slate-400">TEL</dt>
           <dd>
-            <a href="tel:+886229667353" className="hover:text-brand">
+            <a
+              href={`tel:${company.tel.replace(/[^0-9+]/g, "")}`}
+              className="hover:text-brand"
+            >
               {company.tel}
             </a>
           </dd>
-          <dt className="text-slate-400">FAX</dt>
-          <dd>{company.fax}</dd>
           <dt className="text-slate-400">{t("contact_email")}</dt>
           <dd>
             <a href={`mailto:${company.email}`} className="text-brand hover:underline">

@@ -27,7 +27,7 @@
 
 ## ⚠️ 產品細項照片(`public/products/items/`、`public/hero.jpg`)
 
-109 個細項中有 **103 項**配了照片,全部取自三個第三方網站,僅做裁切、縮放與背景補白。
+109 個細項**全部**配了照片,僅做裁切、縮放與背景補白。
 **這些圖都沒有取得授權,上線前必須逐一確認來源與使用許可。**
 
 | 來源 | 張數 | 取得方式 |
@@ -35,6 +35,24 @@
 | anjun.com.tw(安均科技) | 67 | `anjun_crawler.py` 抓下的商品圖 + 除濕機頁 |
 | oceanhoodtw.com(台灣如海光電) | 30 | 產品頁 `og:image` |
 | arno-eo.com(亞諾光電) | 13 | 產品頁 `upload/` 原圖 |
+| 原廠官網(見下表) | 6 | 產品頁原圖 |
+
+### 取自原廠官網的 6 張
+
+先前這 6 項因為找不到無同業標的圖而顯示佔位圖,改直接向原廠官網取圖:
+
+| 細項 | 原廠 / 型號 | 是否為本站列出的供應品牌 |
+| --- | --- | --- |
+| `spectroscopy/wavefront`(光波前分析儀) | Thorlabs WFS40-5C | ✅ 是 |
+| `safety/viewer`(紫外/紅外線觀測器) | Thorlabs VWR1B | ✅ 是 |
+| `spectroscopy/field-spec`(地物光譜儀) | Optosky 奧譜天成 ATP9101 | ❌ 否 |
+| `spectroscopy/fluorescence`(螢光光譜系統) | Holmarc HO-SP-FRS-215Xe | ❌ 否 |
+| `spectroscopy/micro-area`(微區光譜量測系統) | CRAIC Technologies 508 PV | ❌ 否 |
+| `spectroscopy/multi-angle`(多角度光譜量測系統) | GL Optic GLG 8-850 | ❌ 否 |
+
+⚠️ 後四家目前**不在**站上列出的供應品牌內。照片上有各自的原廠標,
+放著等於對外暗示有供應關係 —— 若實際沒有,建議換成實際供應的品牌照片,
+或把該細項改回佔位圖(刪掉 `data/catalog.ts` 對應的 `image:` 那一行即可)。
 
 ### 已排除的圖
 
@@ -56,16 +74,8 @@
 Kimtech、COSSIM、Superèyes、恒洋光學、DHC 等)是原廠產品照的正常情況,
 是否可用取決於原廠授權。
 
-### 顯示佔位圖的 6 項
-
-| 細項 | 原因 |
-| --- | --- |
-| `spectroscopy/fluorescence`(螢光光譜系統) | 三站僅如海有,全數帶 LIFS + 如海標 |
-| `spectroscopy/field-spec`(地物光譜儀) | 同上,機殼印有大面積如海標 |
-| `spectroscopy/multi-angle`(多角度光譜量測系統) | 同上,底板印有 Oceanhood Taiwan |
-| `spectroscopy/micro-area`(微區光譜量測系統) | 同上,顯微鏡上貼有 OCEANHOOD TAIWAN |
-| `spectroscopy/wavefront`(光波前分析儀) | 三站都沒有對應產品 |
-| `safety/viewer`(紫外/紅外線觀測器) | 三站都沒有對應產品 |
+`components/ProductImage.tsx` 仍保留佔位圖:刪掉 `data/catalog.ts` 裡某細項的
+`image:` 那一行,該細項就會自動改顯示佔位圖,不會破版。
 
 ### 替換方式
 

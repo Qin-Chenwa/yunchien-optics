@@ -444,6 +444,7 @@ export const categories: Category[] = [
         en: "Fluorescence Systems",
         descZh: "以特定波長激發樣品並量測其放光光譜,搭配濾片組抑制激發殘光,用於材料發光特性與生醫標定分析。",
         descEn: "Excite a sample at a chosen wavelength and measure its emission spectrum, with filter sets suppressing residual excitation — for material luminescence and biomedical labelling studies.",
+        image: "/products/items/spectroscopy/fluorescence.jpg",
       },
       {
         slug: "micro-area",
@@ -451,6 +452,7 @@ export const categories: Category[] = [
         en: "Micro-Area Spectral Systems",
         descZh: "結合顯微光學與光譜儀,把量測區域縮到微米等級,可針對薄膜、鍍層與元件局部做點對點分析。",
         descEn: "Microscope optics coupled to a spectrometer shrink the measurement area to the micron scale, allowing point-by-point analysis of films, coatings and local device regions.",
+        image: "/products/items/spectroscopy/micro-area.jpg",
       },
       {
         slug: "field-spec",
@@ -458,6 +460,7 @@ export const categories: Category[] = [
         en: "Field Spectrometers",
         descZh: "戶外量測植被、土壤與水體反射光譜的機型,配合遮光與參考板附件,供遙測驗證與農林研究使用。",
         descEn: "Field instruments for measuring vegetation, soil and water reflectance outdoors, with shading and reference-panel accessories for remote-sensing validation and agroforestry research.",
+        image: "/products/items/spectroscopy/field-spec.jpg",
       },
       {
         slug: "handheld-spec",
@@ -473,6 +476,7 @@ export const categories: Category[] = [
         en: "Multi-Angle Spectral Systems",
         descZh: "以可調的入射與收光角度量測反射光譜,用於描述表面的角度相依特性,如珠光塗料、鍍膜與織物。",
         descEn: "Measure reflectance with adjustable illumination and detection angles to characterise angle-dependent surfaces such as pearlescent coatings, thin films and textiles.",
+        image: "/products/items/spectroscopy/multi-angle.jpg",
       },
       {
         slug: "luminous-flux",
@@ -512,6 +516,7 @@ export const categories: Category[] = [
         en: "Wavefront Analyzers",
         descZh: "量測波前相位分布並解析像差,用於檢驗透鏡與系統的成像品質,或作為自適應光學的回授訊號。",
         descEn: "Measure wavefront phase and resolve aberrations to verify lens and system imaging quality, or to provide the feedback signal for adaptive optics.",
+        image: "/products/items/spectroscopy/wavefront.jpg",
       },
       {
         slug: "polarimeter",
@@ -852,6 +857,7 @@ export const categories: Category[] = [
         en: "UV / IR Viewers",
         descZh: "影像轉換式觀測器,可直接觀看紫外或紅外光斑的形狀與分布,適合不可見雷射的即時對準。",
         descEn: "Image-converter viewers show the shape and distribution of UV or IR spots directly, for real-time alignment of invisible laser beams.",
+        image: "/products/items/safety/viewer.jpg",
       },
     ],
   },
